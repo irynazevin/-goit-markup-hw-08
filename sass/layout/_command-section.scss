@@ -1,5 +1,11 @@
 .team {
   background-color: #f5f4fa;
+  @include mq(tablet) {
+    margin-bottom: 60px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 94px;
+  }
 }
 .team__title {
   font-style: normal;
@@ -9,10 +15,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  padding-top: 60px;
 }
 .team-list {
-  // display: flex;
-  // margin-right: -30px;
+  padding-bottom: 60px;
   margin: bottom -30px;
   @include mq(tablet) {
     display: flex;

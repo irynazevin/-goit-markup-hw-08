@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   @include mq(desktop) {
     flex-wrap: nowrap;
+    margin-bottom: 60px;
   }
   &__icon {
     fill: #afb1b8;
