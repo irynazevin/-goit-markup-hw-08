@@ -2,6 +2,8 @@
   display: none;
   @include mq(desktop) {
     display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -19,7 +21,6 @@
 .work-heading-ul {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
 }
 .work-heading-li {
   position: relative;

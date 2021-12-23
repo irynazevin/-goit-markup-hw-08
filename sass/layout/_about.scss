@@ -1,9 +1,6 @@
 .about {
-  padding-top: 60px;
-
   @include mq(desktop) {
     padding-top: 94px;
-    padding-bottom: 47px;
   }
 }
 .about-details {
