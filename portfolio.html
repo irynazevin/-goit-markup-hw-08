@@ -17,192 +17,573 @@
 
 <body>
 <header class="header">
-    <div class="container header-container">
-        <a href="" class="header-logo link">
-            <span class="web-blue">Web</span><span class="studio-black">Studio</span> </a>
-        <nav class="header-navigation">
-            <ul class="menu-links list">
-                <li class="header-item-st"><a href="./index.html" class="header-link link">Студия</a> </li>
-                <li class="header-item-potfolio"><a href="./portfolio.html" class="header-link curent link">Портфолио</a> </li>
-                <li class="header-item-cont"><a href="" class="header-link link">Контакты</a> </li>
-            </ul>
+      <div class="container">
+        <a href="" class="logo link">
+          <span class="web-blue">Web</span><span class="studio-black">Studio</span>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list list ">
+            <li class="header-list__item"><a href="" class="header-list__link link">Студия</a></li>
+            <li class="header-list__potfolio">
+              <a href="./portfolio.html" class="header-list__link curent link">Портфолио</a>
+            </li>
+            <li><a href="" class="header-list__link link">Контакты</a></li>
+          </ul>
         </nav>
-        <ul class="menu-contacts menu-social-list list">
-            <li class="mail header-social-item "><a href="" class="header-mail menu-social-link link">
-                    <svg class="header-social-icon" width="16" height="12">
-                        <use href="./images/icons/symbol-defs.svg#icon-envelope-1">
-                        </use>
-                    </svg>
-                    info@devstudio.com</a></li>
-            <li class="mail header-social-item "><a href="" class="header-telephone menu-social-link link"><svg
-                        class="header-social-icon" width="10" height="16">
-                        <use href="./images/icons/symbol-defs.svg#icon-smartphone-1">
-                        </use>
-                    </svg> +38 096 111 11 11</a></li>
+        <ul class="contacts-list menu-social-list list">
+          <li class="contacts-list__item">
+            <a href="" class="contacts-list__link link">
+              <svg class="contacts-list__icon icon-mail" width="16" height="12">
+                <use href="./images/icons/symbol-defs.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-list__item">
+            <a href="" class="contacts-list__link link"
+              ><svg class="contacts-list__icon icon-telefon" width="10" height="16">
+                <use href="./images/icons/symbol-defs.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
-    </div>
+        <button class="menu-button" type="button" data-menu-button aria-expanded="false">
+          <svg class="menu-bt-icon" width="40" height="40">
+            <use class="icon-open" href="./images/icons/symbol-defs.svg#icon-menu-open"></use>
+            <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-menu" data-menu>
+          <ul class="modal-menu__list list">
+            <li class="modal-menu__item">
+              <a class="modal-menu__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="modal-menu__item">
+              <a class="modal-menu__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="modal-menu__item">
+              <a class="modal-menu__link link" href="./index.html">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="modal-menu-list__wraper">
+            <ul class="modal-menu__contacts list">
+              <li class="modal-menu__contacts-item link">
+                <a class="modal-menu__contacts-link tel link" href="tel:+38 096 111 11 11"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="modal-menu__contacts-item link">
+                <a class="modal-menu__contacts-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="socials list">
+              <li class="socials__item link">
+                <a class="socials__link link" href="./index.html">Instagram</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link link" href="./portfolio.html">Twitter</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link link" href="./index.html">Facebook</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link link" href="./index.html">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 </header>
 
-<main class="basic-section">
-    <section class="portfolio">
-        <div class="container portfolio-container">
-            <div class="keys-portfolio">
-                 <ul class="keys list">
-                    <li class="keys-button"><button type="button" class="backlight-button">Все</button></li>
-                    <li class="keys-button"></li>><button type="button" class="backlight-button">Веб-сайты</button></li>
-                    <li class="keys-button"></li>><button type="button" class="backlight-button">Приложения</button></li>
-                    <li class="keys-button"></li>><button type="button" class="backlight-button">Дизайн</button></li>
-                    <li class="keys-button"></li>><button type="button" class="backlight-button">Маркетинг</button></li>
-                 </ul>
-            </div>
+<main>
+    <section class="portfolio basic-section">
+        <div class="container">
+          <ul class="portfolio__list list">
+            <li class="portfolio__item">
+              <button class="portfolio__button button" type="button">Все </button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button button" type="button"> Веб-сайты </button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button button" type="button">Приложения</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button button" type="button"> Дизайн</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button button" type="button"> Маркетинг</button>
+            </li>
+          </ul>
                 
-            <ul class="portfolio-class">
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img1.jpg" alt="изображение людей" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Технокряк</h3>
-                            <p class="portfolio-paragraph">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img2.jpg" alt="постер" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Постер New Orlean vs Golden Star</h3>
-                            <p class="portfolio-paragraph">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img3.jpg" alt="логотип" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Ресторан Seafood</h3>
-                            <p class="portfolio-paragraph">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img4.jpg" alt="наушники" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Проект Prime</h3>
-                            <p class="portfolio-paragraph">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img5.jpg" alt="книги" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-            
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Проект Boxes</h3>
-                            <p class="portfolio-paragraph">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img6.jpg" alt="компьютер" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Inspiration has no Borders</h3>
-                            <p class="portfolio-paragraph">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img7.jpg" alt="Издание Limited Edition" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Издание Limited Edition</h3>
-                            <p class="portfolio-paragraph">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img8.jpg" alt="Проект LAB" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Проект LAB</h3>
-                            <p class="portfolio-paragraph">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="portfolio-li list">
-                    <a href="" class="portfolio-a link">
-                        <div class="portfolio-wrap">
-                            <img src="images/images2/img9.jpg" alt="Growing Business" width="370" height="294" />
-                            <p class="portfolio-text">
-                                Технокряк это современная площадка распространения коронавируса.
-                                Компании используют эту платформу для цифрового
-                                шпионажа и атак на защищённые сервера конкурентов.
-                            </p>
-                        </div>
-                        <div class="portfolio-section">
-                            <h3 class="portfolio-h3 link">Growing Business</h3>
-                            <p class="portfolio-paragraph">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+           <ul class="work-list list">
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio1-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-img-md.jpg    1x,
+                        ./images/portfolio/portfolio1-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio1-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio1-img-sm.jpg"
+                      alt="Ноутбук открытый на старнице с портфолио"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Технокряк</h3>
+                  <p class="work-list__text">Веб-сайт</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio2-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-img-md.jpg    1x,
+                        ./images/portfolio/portfolio2-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio2-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio1-img-sm.jpg"
+                      alt="Постер с рисунком двух игроков в волейбол"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="work-list__text">Дизайн</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio3-img@2x-lg.jpg 2x
+                      "
+                      media="(max-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-img-md.jpg    1x,
+                        ./images/portfolio/portfolio3-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio3-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio3-img-sm.jpg"
+                      alt="Лого Ресторана Seafood"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Ресторан Seafood</h3>
+                  <p class="work-list__text">Приложение</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio4-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-img-md.jpg    1x,
+                        ./images/portfolio/portfolio4-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio4-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio4-img-sm.jpg"
+                      alt="Наушники полноразмерные накладные"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Проект Prime</h3>
+                  <p class="work-list__text">Маркетинг</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio5-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-img-md.jpg    1x,
+                        ./images/portfolio/portfolio5-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio5-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio5-img-sm.jpg"
+                      alt="Картонные коробки"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Проект Boxes</h3>
+                  <p class="work-list__text">Приложение</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio6-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-img-md.jpg    1x,
+                        ./images/portfolio/portfolio6-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio6-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio6-img-sm.jpg"
+                      alt="Монитор компьютера с изоображенной картой мира и указанными на ней точками"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="work-list__text">Дизайн</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio7-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-img-md.jpg    1x,
+                        ./images/portfolio/portfolio7-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio7-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio7-img-sm.jpg"
+                      alt="Открытый журнал с фото и большим текстом 'I Know I am Limited Edition"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Издание Limited Edition</h3>
+                  <p class="work-list__text">Дизайн</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio8-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-img-md.jpg    1x,
+                        ./images/portfolio/portfolio8-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio8-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio8-img-sm.jpg"
+                      alt="Бирка с надписью 'LAB EL TAG"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Проект LAB</h3>
+                  <p class="work-list__text">Маркетинг</p>
+                </div>
+              </article>
+            </li>
+            <li class="work-list__item">
+              <article class="card">
+                <div class="card-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-img-lg.jpg    1x,
+                        ./images/portfolio/portfolio9-img@2x-lg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-img-md.jpg    1x,
+                        ./images/portfolio/portfolio9-img@2x-md.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-img-sm.jpg    1x,
+                        ./images/portfolio/portfolio9-img@2x-sm.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio9-img-sm.jpg"
+                      alt="Руки на клавиатуре открытого ноутбука, на его экране открыта страница Growing Business"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="modal-portfolio">
+                    <p class="modal-portfolio--paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Tempora ducimus non voluptate distinctio! Repellendus qui
+                      nesciunt suscipit aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3 class="work-list__subtitle">Growing Business</h3>
+                  <p class="work-list__text">Приложение</p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
     </section>
 </main>   
@@ -210,80 +591,81 @@
     
 
 <footer class="footer">
-    <section>
-        <div class="container footer-position">
-            <div class="footer-left">
-                <a href="" class="header-logo-footer link">
-                    <span class="web-blue">Web</span><span class="studio-wiete">Studio</span> </a>
-                </a>
-                <div class="footer-class">
-                    <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-                    <ul>
-                        <li class="class-links-footer"><a class="menu-links-footer link" href="">info@devstudio.com</a>
-                        </li>
-                        <li class="class-links-footer"><a class="footer-telephone link" href="">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-right">
-                <p class="join">
-                    присоединяйтесь
-                </p>
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="masters-social-icon" width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#icon-instagram-2-1">
-                                </use>
-                            </svg>
-                        </a>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="masters-social-icon" width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#icon-twitter-1-1">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="masters-social-icon" width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#icon-facebook-1-1">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="masters-social-icon" width="20" height="20">
-                                <use href="./images/icons/symbol-defs.svg#icon-linkedin-1-1">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="footer-follow">
-                <form action="follow">
-                    <label for="mail" class="footer-label">Подпишитесь на рассылку</label>
-                    <div class="follow-submit">
-                        <input type="email" name="email" class="footer-input" id="email" placeholder="E-mail">
-                        <button type="submit" class="button-folow">
-                            Подписаться
-                            <svg class="icon" width="24" height="24">
-                                <use href="./images/icons/symbol-defs.svg#icon-icon-send-1"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </div>
+      <div class="container footer-position">
+        <div class="footer-left">
+          <a href="" class="header-logo-footer link">
+            <span class="web-blue">Web</span><span class="studio-wiete">Studio</span>
+          </a>
+          <div class="footer-class">
+            <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul>
+              <li class="class-links-footer">
+                <a class="menu-links-footer link" href="">info@devstudio.com</a>
+              </li>
+              <li class="class-links-footer">
+                <a class="footer-telephone link" href="">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
+        <div class="footer-right">
+          <p class="join">присоединяйтесь</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="masters-social-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-instagram-2-1"></use>
+                </svg>
+              </a>
+            </li>
 
-</footer>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="masters-social-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-twitter-1-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="masters-social-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-facebook-1-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="masters-social-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#icon-linkedin-1-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-follow">
+          <form class="follow">
+            <label for="mail" class="footer-label">Подпишитесь на рассылку</label>
+            <div class="follow-submit">
+              <input
+                type="email"
+                name="email"
+                class="footer-input"
+                id="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button-folow">
+                Подписаться
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons/symbol-defs.svg#icon-icon-send-1"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>
